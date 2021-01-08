@@ -1,0 +1,23 @@
+ <div class="card">
+  <div class="card-img-wrapper"> 
+    <img class=" card-img-top" src="assets/imges/{{property.Image}}.jpg">
+     <ul class="list-inline text-center member-icons animated">
+       <li class="list-inline-item"> 
+         <button class="btn btn-primary" routerLink="/property-details/{{property.Id}}" routerLinkActive="router-link-active" ><i class="far fa-edit"></i></button>
+       </li>
+       <li class="list-inline-item"> 
+        <button class="btn btn-primary" routerLink="/property-details/{{property.Id}}"><i class="far fa-address-book"></i></button>
+      </li>
+     </ul>
+  </div>
+
+   <!-- <div class="card shadow-lg bg-image hover-zoom "> -->
+     
+     <div class="card-body p-2">
+      
+       <h4 class="font-weight-bold">{{property.Name}}</h4>
+      <h4>{{property.Type}}</h4>
+      <h4>{{property.Price}}</h4>
+     </div>
+  
+    </div>

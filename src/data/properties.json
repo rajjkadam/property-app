@@ -1,0 +1,45 @@
+[
+    {
+     "Id":1,
+     "Name":"Birla House",
+     "Type":"House",
+      "Price":1000,
+      "Image":"pro7"
+   },
+   {
+     "Id":2,
+     "Name":"Green Hive",
+     "Type":"Flat",
+     "Price":1000,
+     "Image":"pro11"
+   },
+   {
+     "Id":3,
+     "Name":"Kaveri Rest",
+     "Type":"RK",
+     "Price":1000,
+     "Image":"pro10"
+   },
+   {
+     "Id":4,
+     "Name":"Lavasa",
+     "Type":"Villa",
+     "Price":1000,
+     "Image":"pro5"
+   },
+   {
+    "Id":5,
+    "Name":"Wie Beach",
+    "Type":"Resort",
+    "Price":1000,
+    "Image":"pro8"
+  },
+  {
+    "Id":6,
+    "Name":"Rajdeep",
+    "Type":"Hotel",
+    "Price":1000,
+    "Image":"pro7"
+  }
+
+  ]
