@@ -16,9 +16,37 @@
         <a class="nav-link" routerLink="/add-property" >List Property</a>
       </li>
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="search" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+   <div>
+     <ul class="nav navbar-nav">
+        <li *ngIf="!login()" class="nav-item">
+        <a class="nav-link" routerLink="/register">Register</a>
+       </li>
+       <li  *ngIf="!login()"  class="nav-item">
+        <a class="nav-link" routerLink="/login">Login</a>
+       </li>
+      </ul>
+       <div *ngIf="login()" class="dropdown mr-5" dropdown>
+          <a href="#" class="dropdown-toggle text-light" dropdownToggle (click)="false" >
+            Welcome {{logUser}}
+          </a>
+         <div class="dropdown-menu" *dropdownMenu>
+             <a href="#" class="dropdown-item">
+              <i class="fas fa-tachometer-alt">View Dashboard</i>
+             </a>
+             <a href="#" class="dropdown-item">
+              <i class="far fa-user-circle">My Profile</i>
+             </a>
+             <a href="#" class="dropdown-item">
+              <i class="fas fa-key">Change Password</i>
+             </a>
+             <a href="#" (click)="logout()" class="dropdown-item">
+              <i class="fas fa-sign-out-alt" >LogOut</i>
+             </a>
+         </div>
+        
+   
+    </div>
+   </div>
   </div>
+
 </nav>

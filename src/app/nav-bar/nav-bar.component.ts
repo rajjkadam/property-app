@@ -6,10 +6,20 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./nav-bar.component.scss']
 })
 export class NavBarComponent implements OnInit {
-
-  constructor() { }
+  logUser:string;  
+  constructor() { 
+    
+  }
 
   ngOnInit() {
   }
-
+  login(){
+    this.logUser=localStorage.getItem('users');
+    
+    return this.logUser;
+  }
+  logout(){
+    return localStorage.removeItem('users');
+  }
+  
 }
